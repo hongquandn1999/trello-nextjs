@@ -1,5 +1,6 @@
 import Logo from '@/components/logo';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import React from 'react';
 
 type Props = {};
@@ -10,12 +11,16 @@ export const NavBar = (props: Props) => {
       <div className="flex items-center w-full md:max-w-screen-xl mx-auto">
         <Logo />
         <div className="md:justify-end flex items-center justify-between w-full space-x-4 ">
-          <Button size="sm" variant="secondary">
-            Login
-          </Button>
-          <Button size="sm" variant="ghost">
-            Get HHQ For Free
-          </Button>
+          <Link href="/sign-in">
+            <Button size="sm" variant="secondary">
+              Login
+            </Button>
+          </Link>
+          <Link href="/sign-up">
+            <Button size="sm" variant="ghost">
+              Get HHQ For Free
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

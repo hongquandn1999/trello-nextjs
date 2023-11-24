@@ -26,7 +26,7 @@ const MarketingPage = (props: Props) => {
         1500s
       </div>
       <Button className="mt-4" size="lg" asChild>
-        <Link href="#">Get Meichan for free</Link>
+        <Link href="/sign-up">Get Meichan for free</Link>
       </Button>
     </div>
   );
